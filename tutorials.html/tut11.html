@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Entities</title>
+</head>
+
+<body>
+    <div class="container">
+        <p>This is a paragraph</p>
+
+
+        <p>This is also a          paragraph</p>
+        <!-- hme ye sari spaces dekhne ko nhi milengi kyuki html sbhi spaces ko ek space consider krta h -->
+        <!-- if i want to include these spaces then i have to use html entities -->
+
+
+        <p>This is also a &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; paragraph</p>
+        <!-- &nbsp; is a html entity which means non-breaking space. It adds 1 space. CSS is used instead of &nbsp -->
+
+
+        <p>This is a paragraph <p></p>
+        <!-- <p> tag is not shown in the page. To show this we use another entity &lt;p&gt; -->
+        <p>This is a paragraph &lt;p&gt; </p>
+
+
+        <p>pound is written like this &pound;</p>
+        <!-- &pound; entity is used to print pound symbol -->
+
+
+        <p>copyright is written like this &copy;</p>
+        <!-- &copy; entity is used to print copyright symbol-->
+        
+        
+        <p>empty character is written like this &#8203;</p>
+        <!-- &#8203; entity is used to print empty character-->
+
+
+        <!-- all these entities can be searched on net and then used -->
+    </div>
+</body>
+
+</html>

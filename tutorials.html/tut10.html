@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IDs and Classes</title>
+</head>
+<body>
+    <h3>IDs and Classes tutorial</h3>
+    <div id="mainBox" class="redBg blackBorder">
+        <!-- id is unique for each element -->
+        <!-- 1 element can have only 1 id -->
+        This is mainBox
+
+        <!-- 1 element can have different classes (here this div tag have 2 classes redBg and blackBorder)-->
+        <!-- example agr hme 100 elements me ek jaisa change krna h to hm unki class same bnake sbko ek sath change kr payenge -->
+    </div>
+    
+    <div class="redBg">
+        <!-- this div tag also have same class redBg -->
+        <!-- but now id cannot be mainBox -->
+        <!-- class can be same for different elements -->
+    </div>
+
+    <span class="redBg">
+        <!-- this span tag also have same class redBg -->
+    </span>
+
+
+    <!-- SHORTCUTS FOR IDs AND CLASSES -->
+    
+    <!--  . for class and # for id -->
+
+    <div class="class1"></div>
+    <!-- div.class1 to get a div tag with class = class1  -->
+    
+    <div class="class1 class2"></div>
+    <!-- div.class1.class2 to get a div tag with classes = class1 and class2 -->
+    
+    <div id="id1"></div>
+    <!-- div#id1 to get a div tag with id = id1  -->
+
+    <span class="redBg"></span>
+    <!-- span.redBg to get a span tag with class = redBg  -->
+    
+    <span id="id1"></span>
+    <!-- span#id1 to get a span tag with id = id1  -->
+
+
+
+    <!-- Emmet/shortcut takes div tag as default -->
+    <div class="redBg"></div>
+    <!-- .redBg to get a div tag with class = redBg -->
+
+    <!-- div.class1*4 to get 4 div tags of class1 class -->
+    <div class="class1">first</div>
+    <div class="class1">second</div>
+    <div class="class1">third</div>
+    <div class="class1">fourth</div>
+
+</body>
+</html>

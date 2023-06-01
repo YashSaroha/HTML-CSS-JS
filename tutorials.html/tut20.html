@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+
+        *{
+            /*   * is an universal selector. ye sbhi elements me same css daal dega jbtk hm css ko baad me overwrite nhi kr jate */
+            
+            box-sizing: border-box; /* isse padding or margin change krne se box ki width pr koi asar nhi pdega, fixed width me si padding or margins change honge */
+        }
+
+        body{
+            background-color: #d4bdf3;
+        }
+
+        .h1{
+            background-color: burlywood;
+            border: 3px solid rebeccapurple;
+            /* padding and margin same for all sides*/
+            padding: 50px;
+            margin: 50px;
+        }
+
+        .h2{
+            background-color: burlywood;
+            border: 3px solid rebeccapurple;
+            /* padding/margin for top, bottom, left, right simultaneously */
+            padding: 10px 15px 20px 25px;
+            margin: 40px 60px 50px 60px;
+        }
+
+        .h3{
+            background-color: burlywood;
+            border: 3px solid rebeccapurple;
+            /* padding and margin for individual sides */
+            padding-top: 60px;
+            padding-bottom: 10px;
+            padding-right: 30px;
+            padding-left: 70px;
+            margin-top: 60px;
+            margin-bottom: 10px;
+            margin-right: 30px;
+            margin-left: 70px;
+        }
+
+        .h4{
+            background-color: burlywood;
+            border: 3px solid rebeccapurple;
+            /* padding and margin for top-bottom and left-right*/
+            padding: 30px 80px;      /* top-bottom ki 30px left-right ki 80 px*/
+            margin: 50px 100px;      /* top-bottom ki 50px left-right ki 100 px*/
+        }
+
+        .container{
+            border-radius: 25px;
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <h2>This is the pic of box model</h2>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Boxmodell-detail.png" alt="">
+    
+    <div class="h1 container">
+        <h3>This is my first heading</h3>
+        <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, fugit quo temporibus a officia inventore totam iste, molestias corporis doloribus, culpa recusandae perferendis sint error.</p>
+    </div>
+    
+    <div class="h2 container">
+        <h3>This is my second heading</h3>
+        <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, fugit quo temporibus a officia inventore totam iste, molestias corporis doloribus, culpa recusandae perferendis sint error.</p>
+    </div>
+    
+    <div class="h3 container">
+        <h3>This is my third heading</h3>
+        <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, fugit quo temporibus a officia inventore totam iste, molestias corporis doloribus, culpa recusandae perferendis sint error.</p>
+    </div>
+    
+    <div class="h4 container">
+        <h3>This is my fourth heading</h3>
+        <p id="fourth">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, fugit quo temporibus a officia inventore totam iste, molestias corporis doloribus, culpa recusandae perferendis sint error.</p>
+    </div>
+</body>
+</html>

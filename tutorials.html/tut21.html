@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        .container {
+            background-color: peachpuff;
+            width: 900px;
+            border: 5px solid orangered;
+            margin: 33px auto;
+            /* to centre any element margin auto is used, here left-right margin is centered*/
+
+        }
+
+        .item {
+            border: 3px solid blue;
+            margin: 12px 8px;
+            padding: 12px 3px;
+            background-color: rgb(135, 209, 222);
+        }
+
+        #fruits {
+            float: left;
+            width: 48%;
+        }
+
+        #computer {
+            float: right;
+            width: 48%;
+        }
+
+        #stationary {
+            /* float: left; */
+
+            /* clear left krne se jo bhi elements left float kr rhe the wo ab isko disturb nhi krenge or overlap nhi krenge...similarily for clear right*/
+            /* clear both krne se dono left or right floating elements pr apply ho jayega */
+
+            clear: both;
+            width: 100%;
+        }
+
+        p, h3{
+            text-align: justify;    /* right, left, centre, justify*/
+        }
+
+        h1{
+            margin: 25px auto;
+            width: fit-content;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome to my Store</h1>
+
+        <div id="fruits" class="item">
+            <h3>Fruits</h3>
+            <p id="fruitsPara" class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim quaerat,
+                assumenda temporibus rem corrupti error sit accusamus ut laboriosam quibusdam exercitationem adipisci
+                beatae ipsum, asperiores cupiditate doloribus? Exercitationem, rerum error? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda accusamus pariatur autem? Corrupti eveniet amet soluta quo unde, ducimus, sit perferendis aliquam saepe ea alias fugit eos iure laudantium nihil quis, cum asperiores porro?</p>
+        </div>
+
+        <div id="computer" class="item">
+            <h3>Computer</h3>
+            <p id="computerPara" class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim quaerat,
+                assumenda temporibus rem corrupti error sit accusamus ut laboriosam quibusdam exercitationem adipisci
+                beatae ipsum, asperiores cupiditate doloribus? Exercitationem, rerum error? Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus dignissimos accusamus possimus perferendis vel pariatur, quis est officia cupiditate. Sit ducimus hic voluptates pariatur qui quasi, ut accusamus ullam, rem iure tenetur maiores nisi?</p>
+        </div>
+
+        <div id="stationary" class="item">
+            <h3>Stationary</h3>
+            <p id="stationaryPara" class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim quaerat,
+                assumenda temporibus rem corrupti error sit accusamus ut laboriosam quibusdam exercitationem adipisci
+                beatae ipsum, asperiores cupiditate doloribus? Exercitationem, rerum error?</p>
+        </div>
+        
+        <div id="glasses" class="item">
+            <h3>Glasses</h3>
+            <p id="glassesPara" class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim quaerat,
+                assumenda temporibus rem corrupti error sit accusamus ut laboriosam quibusdam exercitationem adipisci
+                beatae ipsum, asperiores cupiditate doloribus? Exercitationem, rerum error?</p>
+        </div>
+
+    </div>
+</body>
+
+</html>

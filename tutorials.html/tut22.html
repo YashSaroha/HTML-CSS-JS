@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo selectors & more designing</title>
+    <style>
+        .container{
+            border: 3px solid blue;
+            background-color: powderblue;
+            padding: 34px;
+            margin: 34px auto;
+            width: 666px;
+        }
+
+        a{
+            text-decoration: none;      /*isse link ke niche ki underline htt jayegi*/
+            color: black;
+        }
+
+        a:hover{
+            color: rgb(255, 0, 212);             /*link ke text pr hover krne se uska color red ho jayega*/
+            background-color: yellow;    /*link ke text pr hover krne se uska background color yellow ho jayega */
+        }
+
+        a:visited{
+            color: rgb(192, 119, 67);        /*link ek bar vist ke baad uske text ka color change ho jayega.....baki properties jaise background color b lga skte h apni need ke according*/
+        }
+
+        a:active{
+            color: rgb(57, 39, 177);        /*link ke text ko hold krke rkhenge to color change ho jayega.....baki properties jaise background color b lga skte h apni need ke according*/
+        }
+
+        .btn{
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            background-color: chartreuse;
+            padding: 6px;
+            border: none;
+            cursor: pointer;            /*cursor is changed to pointer when we go on the button*/
+            font-size: 13px;
+            border-radius: 4px;
+        }
+
+        .btn:hover{
+            color: white;
+            background-color: tomato;
+            /* link or button dono ki class same krdi thi islie link ka background color ab overwrite hogya */
+            border: 3px solid black;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container" id="cont1">
+        <h3>This is my heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis velit eius repellendus doloribus perspiciatis culpa natus delectus corporis ducimus! Eveniet quis optio laudantium, officia ab deleniti numquam nihil cupiditate distinctio voluptatibus, ipsum harum repellendus reiciendis.</p>
+
+        <a href="https://google.com" class="btn">Read more</a>
+        <button class="btn">Contact Us</button>
+
+    </div>
+</body>
+</html>

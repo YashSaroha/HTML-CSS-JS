@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <style>
+        .navbar{
+            background-color: #834dbd;
+            border-radius: 30px;
+        }
+
+        .navbar ul{
+            overflow: auto;         /*taki parent element se bahar na nikle*/
+            text-decoration: none;
+        }
+
+        .navbar li{
+            float: left;
+            list-style: none;       /* to remove bullets*/
+            margin: 13px 20px;
+            padding-top: 4px;
+        }
+
+        .navbar a{
+            text-decoration: none;
+            padding: 3px 3px;
+            color: white;
+        }
+        
+        .navbar a:hover{
+            /* background-color: purple; */
+            color: black;
+        }
+
+        .search{
+            float: right;
+            color: white;
+            padding: 14px 125px;
+        }
+
+        .navbar input{
+            border: 2px solid black;
+            border-radius: 7px;
+            padding: 2px 11px;
+            width: 130px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <div class="search">
+                    <input type="text" name="Search" id="search" placeholder="Search this website">
+                    <!-- placeholder means seach box ke andr jo text likha rhega -->
+                </div>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>

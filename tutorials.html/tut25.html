@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions in CSS</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            background-color: cornsilk;
+            height: 3500px;
+        }
+
+        .box{
+            border: 2px solid red;
+            height: 150px;
+            width: 150px;
+            margin: 2px;
+            display: inline-block;
+        }
+
+        /* css positions: static (bydefault), relative, absolute, fixed, stickey */
+
+
+        
+        
+        
+        #box3{
+            /* relative: relative to its original position & will leave a gap at its original position*/
+            /* position: relative;
+            top: 34px;
+            left: 34px; */
+
+            /* absolute: relative to its first parent & will not leave gaps (yha pr boxes ka first parent container hai) */
+            /* position: absolute; */
+            /* top: 34px; */
+            /* left: 34px; */
+
+            /*   static: its normal position */
+            /* position: static; */
+
+            /* fixed: browser window ke according change hoga or scroll krne pr bhi usi position pr fixed rhega */
+            /* position: fixed; */
+            /* right: 24px; */
+
+            /* sticky: browser window ke according chipka rhega or scroll krne pr bhi usi position pr chipka rhega */
+            position: sticky;
+            top: 15px;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+    </div>
+</body>
+</html>

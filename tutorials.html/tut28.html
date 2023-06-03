@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Tutorial</title>
+    <style>
+        .container{
+            height: 550px;
+            width: 100%;
+            border: 2px solid black;
+            /* Initialize the container as a flexbox */
+            display: flex;
+            
+            /* FLEX PROPERTIES FOR A FLEX CONTAINER */
+            
+            flex-direction: row;   /* this is by default */
+            /* flex-direction: column; */
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column-reverse; */
+
+            
+            
+            /* flex-wrap: nowrap;      this is by default */
+            flex-wrap: wrap;    /* alg alg devices ke according wrap ho jayenge elements */
+            /* flex-wrap: wrap-reverse; */
+
+            
+            
+            /* flex-flow: row-reverse wrap; */   /* direction or wrap ek sath lgane ke liye */
+
+            
+            /* justify-content will justify the contents in horizontal direction only */
+            /*justify-content: center; */            /* to align elements in centre (horizontally only)*/
+            /* justify-content: space-between; */    /*hr element ke bich me brabar space*/
+            /* justify-content: space-evenly; */     /*sbhi elements or starting and end me brabar spacing*/
+            /* justify-content: space-around; */     /*hr element ke charo side uski khud ki space aa jaegi..isse start or end me brabar space nhi rhegi*/
+
+            
+            /* align-items will justify the contents in vertical direction only*/
+            align-items: flex-start;      /* THIS IS BY DEFAULT...top me horizontally center krne k liye*/
+            /* align-items: flex-end; */       /*bottom me horizontally center krne k liye*/
+            /* align-items: center;   */       /*vertically and horizontally center krne k liye*/
+            /* align-items: stretch;  */       /*vertically elements ke bich me brabar space ke liye*/
+
+        }
+
+        .item{
+            width: 150px;
+            height: 150px;
+            border: 4px solid blue;
+            background-color: tomato;
+            margin: 10px;
+            padding: 3px;
+        }
+
+        #item-1{
+            /* FLEX PROPERTIES FOR A FLEX ITEM */
+
+            order: 1;   /*jiska order jyada hoga wo last me jayega container me*/
+            flex-grow: 2;       /*jiski value jyada hogi wo jyada grow krega jb hm container bda krenge*/
+            flex-shrink: 3;     /*jiski value jyada hogi wo jldi shrink krega container ka size chota krne pe*/
+        }
+
+        #item-2{
+            order: 20;
+            flex-grow: 3;
+            flex-shrink: 1;
+            flex-basis: 60px;      /*when flex-direction is set to row then flex-basis will control width of item*/
+                                    /*when flex-direction is set to row then flex-basis will control width of item*/
+        }
+
+        #item-3{
+            order: 33;
+            flex: 5 8 200px;        /*flex grow, shrink, basis ka shorthand is flex*/
+            /* align-self: flex-start; */
+            /* align-self: flex-end; */
+            /* align-self: center; */
+        }
+
+    </style>
+</head>
+<body>
+    <h1>This is flexbox tutorial</h1>
+    <div class="container">
+        <!-- div.item#item-$*6 -->
+        <div class="item" id="item-1">First box</div>
+        <div class="item" id="item-2">Second box</div>
+        <div class="item" id="item-3">Third box</div>
+        <!-- <div class="item" id="item-4">Fourth box</div>
+        <div class="item" id="item-5">Fifth box</div>
+        <div class="item" id="item-6">Sixth box</div> -->
+    </div>
+</body>
+</html>

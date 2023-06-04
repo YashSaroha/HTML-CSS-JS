@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After Pseudo Selectors</title>
+    <style>
+
+        body{
+            margin: 0px;
+            padding: 0px;
+            background-color: black;
+            color: white;
+            /* background: url('https://source.unsplash.com/random/900x700/?fruit') no-repeat center center/cover; */
+            /* isse ek problem aayegi ki hm image ki wajah se text nhi pdh payenge...opacity km kri to puri body ki km ho jaegi...isse bachne ke liye hm before pseudo selector lgaenge or udhr changes krenge */
+        }
+        
+        header::before{
+            content: "";        /* content nhi dalna kuch islie blank chhod diya */
+            background: url('https://source.unsplash.com/random/900x700/?fruit') no-repeat center center/cover;
+            position: absolute;
+            top: 0;                 /* sirf absolute tha to image pure page pr nhi aari thi to top bottom 0 set krdia */
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;            /* image ko text ke piche bhejne ke liye ye set kra */
+            opacity: 0.3;           /* text read krne ke liye image ki opacity km krdi */
+        }
+
+        /* section::before se content section se phle add ho jaega...lly seftion after*/
+
+        /* section::before{                    
+            content: "This is before content";
+        } */
+
+        /* section::after{                    
+            content: "This is after content";
+        } */
+
+        section{
+            height: 270px;
+            display: flex;
+            flex-direction: column;
+            margin: 20px 180px;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        .navigation{
+            display: flex;
+            font-size: 20px;
+        }
+
+        li{
+            list-style: none;
+            padding: 9px 46px;
+        }
+
+        h1{
+            font-size: 3rem;
+        }
+
+        p{
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h1>Welcome to Coding World</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime veritatis at aspernatur? Soluta aliquam mollitia, perferendis voluptate esse dolorum culpa minus repellendus nihil quisquam quos perspiciatis hic velit eligendi molestias, impedit modi ea ullam!</p>
+    </section>
+    <hr>
+
+
+</body>
+</html>

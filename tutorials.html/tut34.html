@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow and Text Shadow</title>
+    <style>
+        .container{
+            display: flex;
+        }
+
+        .card{
+            padding: 20px 10px;
+            margin: 20px 10px;
+            /* border: 2px solid red; */
+            background-color:skyblue;
+
+            /* box-shadow: x-axis  y-axis  blur-radius  spread-radius  color */
+            /* blur-radius ki value jitni jyada hogi, shadow ka color utna hi blur ho jaega */
+            /* spread-radius ki value jitni jyada hogi, shadows utna dur tk spread hongi */
+            /* using blur-radius and spread-radius is not necessary*/
+            /* values negative me b ho skti h */
+            /* box-shadow: 10px 15px rgb(0, 125, 209); */
+            /* box-shadow: -10px -15px rgb(0, 125, 209); */
+
+            /* rgba color daal skte h...red green blue alpha...rgb can change as per our wish...aplha control darkness of color */
+            box-shadow: 10px 15px 20px 4px rgba(0, 125, 209, 0.9);
+
+            /* inset krne se shadows box ke andr la skte h */
+            /* box-shadow: inset 10px 15px rgb(0, 125, 209); */
+
+            /* multiple shadows lgane ke liye normally comma se separte krke likh skte h*/
+            /* jis color ko pehle likhenge wo phle add hoga as shadow then next color */
+            /* box-shadow: 12px 14px red , 26px 30px green; */
+        }
+
+        .card h2{
+
+            /* similarly hm text shadow de skte hain...box shadow ki same properties yha b lgengi */
+            text-shadow: 2px 2px 2px red;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>Card1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt perferendis, earum sapiente atque natus corrupti voluptatum, sed doloremque molestias necessitatibus voluptatem deleniti consequatur maiores. Modi minima nam nesciunt doloremque dolore? Sunt nisi corrupti unde!</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>Card2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus magnam, culpa placeat nulla sint quisquam inventore neque alias voluptate labore, debitis doloremque minus optio aliquam sunt doloribus rerum exercitationem praesentium suscipit. Cumque, eligendi tenetur?</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>Card3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus magnam, culpa placeat nulla sint quisquam inventore neque alias voluptate labore, debitis doloremque minus optio aliquam sunt doloribus rerum exercitationem praesentium suscipit. Cumque, eligendi tenetur?</p>
+        </div>
+    </div>
+</body>
+</html>

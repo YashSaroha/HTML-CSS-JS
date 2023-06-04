@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selectors</title>
+    <style>
+        h1{
+            background-color: red;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        /* div ke andr jitne bhi p hain unke liye ye css lg jayegi...no matter kitne divs ke andr p hai */
+        /*div p{
+            color: yellow;
+            font-weight: bold;
+            background-color: green
+        }*/
+
+        
+        /* div ke just andr p ko ye affect kregi */
+        /* div > p{
+            background-color: salmon;
+        } */
+
+
+        /* div ke andr li, uske andr p ko ye affect kregi */
+        /* div li p{
+            background-color: purple;
+        } */
+
+
+        /* ol ke andr li, uske andr p ko ye affect kregi */
+        /* ol li p{
+            background-color: royalblue;
+        } */
+
+
+        /* div ke andr ke h3 koaffect krega */
+        div h3{
+            border: 2px solid red;
+            font-style: italic;
+        }
+
+
+        /* div + p mtlb unn p ko change krega jinka pichla sibling div tha*/
+        /* div + p{
+            background-color: sienna;
+            color: black;
+        } */
+
+
+        /* ul + p mtlb unn p ko change krega jinka pichla sibling ul tha*/
+        /* ul + p{
+            background-color: lightseagreen;
+            color: black;
+        } */
+
+        /* SIMILARLY HM APNE ACCORDING ALG ALG SELECTORS BNAKE CSS DAAL SKTE HAI */
+
+
+    </style>
+</head>
+<body>
+
+    <h1>This is more on selectors</h1>
+
+    <div class="container">
+        
+        <div class="row">
+            <ul>
+                <li class="item"><p>This is a para inside li</p></li>
+            </ul>
+            <p>This is a paragraph just inside div</p>
+        </div>
+        
+        <p>This is another para just inside div</p>
+    </div>
+
+    
+    <ol>
+        <li><p>This is a para inside ol</p></li>
+    </ol>
+
+    <div>
+        <h3>This is a heading inside div</h3>
+    </div>
+</body>
+</html>

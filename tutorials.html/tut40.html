@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Tutorial</title>
+    <style>
+
+        .container{
+            display: grid;          /*isse container ek grid bngya or iske andr ke items grid-items bngye*/
+            
+            /*1st colm ki width 300, 2nd ki 100, 3rd ki 200...jitne colm chaiye utno ki width likh denge*/
+            grid-template-columns: 300px 100px 200px;       
+            
+            /*auto se apne aap width le lega maximum possible jitni hogi*/
+            /* grid-template-columns: 300px auto 200px; */
+            
+            /*fr unit mtlb FRACTION : screen ko utni ratio me divide krna...1:4:2 ki ratio me colm aa jaenge*/     
+            /* grid-template-columns: 1fr 4fr 2fr; */
+
+            /*bohot sare colm bnane pd jaye ek hi width ke to ye shorthand lgega...isme 10 colm or sbki width auto*/
+            /* grid-template-columns: repeat(10, auto); */
+            grid-template-columns: repeat(3, auto);             /*3 colm me 20 items aa jaenge*/
+
+        }
+
+        .item{
+            /* height: 100px; */
+            /* width: 100px; */
+            background-color: red;
+            border: 2px solid black;
+            padding: 15px 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">This is Item-1</div>
+        <div class="item">This is Item-2</div>
+        <div class="item">This is Item-3</div>
+        <div class="item">This is Item-4</div>
+        <div class="item">This is Item-5</div>
+        <div class="item">This is Item-6</div>
+        <div class="item">This is Item-7</div>
+        <div class="item">This is Item-8</div>
+        <div class="item">This is Item-9</div>
+        <div class="item">This is Item-10</div>
+        <div class="item">This is Item-11</div>
+        <div class="item">This is Item-12</div>
+        <div class="item">This is Item-13</div>
+        <div class="item">This is Item-14</div>
+        <div class="item">This is Item-15</div>
+        <div class="item">This is Item-16</div>
+        <div class="item">This is Item-17</div>
+        <div class="item">This is Item-18</div>
+        <div class="item">This is Item-19</div>
+        <div class="item">This is Item-20</div>
+    </div>
+</body>
+</html>
